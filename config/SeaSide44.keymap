@@ -76,9 +76,9 @@
 
         WinJapanese {
             bindings = <
-&trans  &kp Q  &kp W         &kp E         &kp R                 &kp T                                           &kp Y        &kp U  &kp I            &kp O       &lt 7 P            &kp N0
-&trans  &kp A  &kp S         &kp D         &kp F                 &kp G                                           &kp H        &kp J  &kp K            &kp L       &kp COLON          &kp N1
-&trans  &kp Z  &kp X         &kp C         &kp V                 &kp B                                           &kp N        &kp M  &kp COMMA        &kp PERIOD  &kp DOUBLE_QUOTES  &kp N2
+&trans  &kp Q  &kp W         &kp E         &kp R                 &kp T                                           &kp Y        &kp U  &kp I            &kp O       &lt 7 P    &trans
+&trans  &kp A  &kp S         &kp D         &kp F                 &kp G                                           &kp H        &kp J  &kp K            &kp L       &kp COLON  &kp ENTER
+&trans  &kp Z  &kp X         &kp C         &kp V                 &kp B                                           &kp N        &kp M  &kp COMMA        &kp PERIOD  &kp SLASH  &kp MINUS
                &kp LEFT_WIN  &kp LEFT_ALT  &mt LCTRL LANGUAGE_2  &lt 4 SPACE  &lt 6 LANGUAGE_1    &kp BACKSPACE  &lt 5 ENTER         &kp PRINTSCREEN
             >;
         };
