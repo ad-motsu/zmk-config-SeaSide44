@@ -45,10 +45,10 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE  &kp Q  &kp W      &kp E         &kp R                    &kp T                                            &kp Y        &kp U  &lt 6 I    &kp O       &lt 6 P        &kp LC(DELETE)
+&kp ESCAPE  &kp Q  &kp W      &kp E         &kp R                    &kp T                                            &kp Y        &kp U  &lt 7 I    &kp O       &lt 7 P        &kp LC(DELETE)
 &kp TAB     &kp A  &kp S      &kp D         &kp F                    &kp G                                            &kp H        &kp J  &kp K      &kp L       &kp SEMICOLON  &mt RIGHT_WIN ENTER
-&kp LSHFT   &kp Z  &kp X      &kp C         &kp V                    &kp B                                            &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &lt 6 MINUS
-                   &kp LCTRL  &kp LEFT_ALT  &mt LEFT_WIN LANGUAGE_2  &lt 1 SPACE  &lt 6 LANG1    &mt RCTRL BACKSPACE  &lt 2 ENTER         &kp PSCRN
+&kp LSHFT   &kp Z  &kp X      &kp C         &kp V                    &kp B                                            &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &lt 7 MINUS
+                   &kp LCTRL  &kp LEFT_ALT  &mt LEFT_WIN LANGUAGE_2  &lt 1 SPACE  &lt 7 LANG1    &mt RCTRL BACKSPACE  &lt 2 ENTER         &kp PSCRN
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -56,9 +56,9 @@
 
         ARROW {
             bindings = <
-&trans  &trans    &mkp MB4                &kp UP_ARROW              &mkp MB5                 &trans                           &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)  &trans        &kp RA(RIGHT_ARROW)  &kp RG(RIGHT_ARROW)          &kp N0
-&trans  &kp HOME  &kp LC(LEFT_ARROW)      &kp LC(LA(LG(UP_ARROW)))  &kp LC(RIGHT_ARROW)      &kp PAGE_UP                      &kp C_AC_COPY       &mkp MB1            &kp UP_ARROW  &mkp MB2             &mkp MB3                     &kp N1
-&trans  &kp END   &kp LG(LA(LEFT_ARROW))  &kp LS(LA(LG(DOWN)))      &kp LG(LA(RIGHT_ARROW))  &kp PAGE_DOWN                    &kp K_PASTE         &kp LEFT_ARROW      &kp DOWN      &kp RIGHT            &kp RA(RC(RG(RIGHT_ARROW)))  &kp N2
+&tog 3  &trans    &trans                  &trans                    &trans                   &trans                           &kp LG(LEFT_ARROW)  &kp LA(LEFT_ARROW)  &trans        &kp RA(RIGHT_ARROW)  &kp RG(RIGHT_ARROW)          &kp N0
+&trans  &kp HOME  &kp LC(LEFT_ARROW)      &kp LC(LA(LG(UP_ARROW)))  &kp LC(RIGHT_ARROW)      &kp PAGE_UP                      &kp RC(C)           &mkp MB1            &kp UP_ARROW  &mkp MB2             &mkp MB3                     &kp N1
+&trans  &kp END   &kp LG(LA(LEFT_ARROW))  &kp LS(LA(LG(DOWN)))      &kp LG(LA(RIGHT_ARROW))  &kp PAGE_DOWN                    &kp RC(V)           &kp LEFT_ARROW      &kp DOWN      &kp RIGHT            &kp RA(RC(RG(RIGHT_ARROW)))  &kp N2
                   &trans                  &trans                    &trans                   &trans         &trans    &trans  &trans                                  &trans
             >;
 
@@ -74,12 +74,21 @@
             >;
         };
 
-        SYMBOL_NUM {
+        WinJapanese {
             bindings = <
-&trans  &kp PRCNT  &kp DOLLAR  &kp AMPERSAND  &kp CARET        &kp FSLH                           &kp BSLH        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN   &kp N0
-&trans  &kp AT     &kp HASH    &kp ASTERISK   &kp PLUS         &kp EQUAL                          &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI       &kp COLON          &kp N1
-&trans  &kp GRAVE  &kp TILDE   &kp MINUS      &kp EXCLAMATION  &kp QUESTION                       &kp PIPE        &kp LBKT              &kp RBKT               &kp SQT        &kp DOUBLE_QUOTES  &kp N2
-                   &trans      &trans         &trans           &trans        &trans    &kp COMMA  &kp PERIOD                            &kp ESC
+&trans  &kp Q      &kp W      &kp E         &kp R            &kp FSLH                           &kp BSLH        &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN   &kp N0
+&trans  &kp AT     &kp HASH   &kp ASTERISK  &kp PLUS         &kp EQUAL                          &kp UNDERSCORE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMI       &kp COLON          &kp N1
+&trans  &kp GRAVE  &kp TILDE  &kp MINUS     &kp EXCLAMATION  &kp QUESTION                       &kp PIPE        &kp LBKT              &kp RBKT               &kp SQT        &kp DOUBLE_QUOTES  &kp N2
+                   &trans     &trans        &trans           &trans        &trans    &kp COMMA  &kp PERIOD                            &kp ESC
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans
             >;
         };
 
@@ -94,10 +103,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                          &trans            &trans  &trans  &trans  &trans  &kp N0
-&trans  &trans  &trans  &trans  &trans  &trans                                          &trans            &trans  &trans  &trans  &trans  &kp N1
-&trans  &trans  &trans  &trans  &trans  &trans                                          &trans            &trans  &trans  &trans  &trans  &kp N2
-                &trans  &trans  &trans  &kp LS(LG(N5))  &kp LS(LG(N4))    &kp LC(DOWN)  &kp LC(UP_ARROW)          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                          &trans            &trans    &trans  &trans    &trans  &kp N0
+&trans  &trans  &trans  &trans  &trans  &trans                                          &trans            &mkp MB1  &trans  &mkp MB2  &trans  &kp N1
+&trans  &trans  &trans  &trans  &trans  &trans                                          &trans            &trans    &trans  &trans    &trans  &kp N2
+                &trans  &trans  &trans  &kp LS(LG(N5))  &kp LS(LG(N4))    &kp LC(DOWN)  &kp LC(UP_ARROW)            &trans
             >;
         };
 
@@ -107,15 +116,6 @@
 &trans  &trans          &trans        &trans        &trans        &trans                          &trans       &trans  &trans  &trans  &trans  &kp N1
 &trans  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &bootloader  &trans  &trans  &trans  &trans  &kp N2
                         &trans        &trans        &trans        &trans        &trans    &trans  &trans               &trans
-            >;
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans
             >;
         };
     };
