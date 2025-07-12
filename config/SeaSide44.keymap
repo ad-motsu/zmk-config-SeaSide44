@@ -28,6 +28,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        to_layer_3: new_macro {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 3 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "NEW_MACRO";
+        };
     };
 
     behaviors {
@@ -46,7 +53,7 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE  &kp Q  &kp W      &kp E         &kp R                    &kp T                                            &kp Y        &kp U  &lt 5 I    &kp O       &lt 7 P        &kp LC(DELETE)
+&kp ESCAPE  &kp Q  &kp W      &kp E         &kp R                    &kp T                                            &kp Y        &kp U  &lt 5 I    &kp O       &lt 7 P        &kp DELETE
 &kp TAB     &kp A  &kp S      &kp D         &kp F                    &kp G                                            &kp H        &kp J  &kp K      &kp L       &kp SEMICOLON  &mt RIGHT_WIN ENTER
 &kp LSHFT   &kp Z  &kp X      &kp C         &kp V                    &kp B                                            &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &lt 6 MINUS
                    &kp LCTRL  &kp LEFT_ALT  &mt LEFT_WIN LANGUAGE_2  &lt 1 SPACE  &lt 6 LANG1    &mt RCTRL BACKSPACE  &lt 2 ENTER         &kp PSCRN
@@ -58,8 +65,8 @@
         ARROW {
             bindings = <
 &tog 3  &to_layer_0 Q  &to_layer_0 W           &to_layer_0 E             &to_layer_0 R            &to_layer_0 T                    &to_layer_0 Y  &to_layer_0 U   &to_layer_0 I  &to_layer_0 O  &kp RG(RIGHT_ARROW)          &trans
-&trans  &kp HOME       &kp LC(LEFT_ARROW)      &kp LC(LA(LG(UP_ARROW)))  &kp LC(RIGHT_ARROW)      &kp PAGE_UP                      &kp RC(C)      &mkp MB1        &kp UP_ARROW   &mkp MB2       &mkp MB3                     &trans
-&trans  &kp END        &kp LG(LA(LEFT_ARROW))  &kp LS(LA(LG(DOWN)))      &kp LG(LA(RIGHT_ARROW))  &kp PAGE_DOWN                    &kp RC(V)      &kp LEFT_ARROW  &kp DOWN       &kp RIGHT      &kp RA(RC(RG(RIGHT_ARROW)))  &trans
+&trans  &kp HOME       &kp LC(LEFT_ARROW)      &kp LC(LA(LG(UP_ARROW)))  &kp LC(RIGHT_ARROW)      &kp PAGE_UP                      &kp LG(C)      &mkp MB1        &kp UP_ARROW   &mkp MB2       &mkp MB3                     &trans
+&trans  &kp END        &kp LG(LA(LEFT_ARROW))  &kp LS(LA(LG(DOWN)))      &kp LG(LA(RIGHT_ARROW))  &kp PAGE_DOWN                    &kp LG(V)      &kp LEFT_ARROW  &kp DOWN       &kp RIGHT      &kp RA(RC(RG(RIGHT_ARROW)))  &trans
                        &trans                  &trans                    &trans                   &trans         &trans    &trans  &trans                         &trans
             >;
 
@@ -86,10 +93,10 @@
 
         ARROW_WIN {
             bindings = <
-&tog 0  &trans    &trans            &trans  &trans               &trans                           &trans     &trans    &trans          &trans     &trans  &trans
-&trans  &kp HOME  &kp LG(LC(LEFT))  &trans  &kp LC(LG(RIGHT))    &kp PAGE_UP                      &kp LC(C)  &mkp MB1  &kp UP_ARROW    &mkp MB2   &trans  &trans
-&trans  &kp END   &kp LG(LEFT)      &trans  &kp LG(RIGHT_ARROW)  &kp PAGE_DOWN                    &kp LC(V)  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-                  &trans            &trans  &trans               &trans         &trans    &trans  &trans               &trans
+&tog 0  &trans    &trans            &trans  &trans               &trans                           &to_layer_3 Y  &to_layer_3 U  &to_layer_3 I   &to_layer_3 O  &trans  &trans
+&trans  &kp HOME  &kp LG(LC(LEFT))  &trans  &kp LC(LG(RIGHT))    &kp PAGE_UP                      &kp LC(C)      &mkp MB1       &kp UP_ARROW    &mkp MB2       &trans  &trans
+&trans  &kp END   &kp LG(LEFT)      &trans  &kp LG(RIGHT_ARROW)  &kp PAGE_DOWN                    &kp LC(V)      &kp LEFT       &kp DOWN_ARROW  &kp RIGHT      &trans  &trans
+                  &trans            &trans  &trans               &trans         &trans    &trans  &trans                        &trans
             >;
         };
 
