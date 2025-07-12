@@ -64,10 +64,10 @@
 
         ARROW {
             bindings = <
-&tog 3  &to_layer_0 Q  &to_layer_0 W           &to_layer_0 E             &to_layer_0 R            &to_layer_0 T                    &to_layer_0 Y  &to_layer_0 U   &to_layer_0 I  &to_layer_0 O  &kp RG(RIGHT_ARROW)          &trans
-&trans  &kp HOME       &kp LC(LEFT_ARROW)      &kp LC(LA(LG(UP_ARROW)))  &kp LC(RIGHT_ARROW)      &kp PAGE_UP                      &kp LG(C)      &mkp MB1        &kp UP_ARROW   &mkp MB2       &mkp MB3                     &trans
-&trans  &kp END        &kp LG(LA(LEFT_ARROW))  &kp LS(LA(LG(DOWN)))      &kp LG(LA(RIGHT_ARROW))  &kp PAGE_DOWN                    &kp LG(V)      &kp LEFT_ARROW  &kp DOWN       &kp RIGHT      &kp RA(RC(RG(RIGHT_ARROW)))  &trans
-                       &trans                  &trans                    &trans                   &trans         &trans    &trans  &trans                         &trans
+&tog 3  &to_layer_0 Q  &to_layer_0 W           &to_layer_0 E  &to_layer_0 R            &to_layer_0 T                    &to_layer_0 Y  &to_layer_0 U   &to_layer_0 I  &to_layer_0 O  &kp RG(RIGHT_ARROW)          &trans
+&trans  &trans         &kp LC(LEFT_ARROW)      &kp PAGE_UP    &kp LC(RIGHT_ARROW)      &kp HOME                         &kp LG(C)      &mkp MB1        &kp UP_ARROW   &mkp MB2       &mkp MB3                     &trans
+&trans  &trans         &kp LG(LA(LEFT_ARROW))  &kp PAGE_DOWN  &kp LG(LA(RIGHT_ARROW))  &kp END                          &kp LG(V)      &kp LEFT_ARROW  &kp DOWN       &kp RIGHT      &kp RA(RC(RG(RIGHT_ARROW)))  &trans
+                       &trans                  &trans         &trans                   &trans         &trans    &trans  &trans                         &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
