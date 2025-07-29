@@ -23,12 +23,12 @@
         compatible = "zmk,combos";
 
         mouseclick1 {
-            bindings = <&none>;
+            bindings = <&mkp LCLK>;
             key-positions = <19 20>;
         };
 
         mouseclick2 {
-            bindings = <&none>;
+            bindings = <&mkp RCLK>;
             key-positions = <21 20>;
         };
     };
