@@ -19,7 +19,19 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        mouseclick1 {
+            bindings = <&none>;
+            key-positions = <19 20>;
+        };
+
+        mouseclick2 {
+            bindings = <&none>;
+            key-positions = <21 20>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
