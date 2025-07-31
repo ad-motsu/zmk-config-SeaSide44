@@ -65,7 +65,7 @@
 
         default_layer {
             bindings = <
-&kp ESCAPE  &kp Q  &kp W      &kp E         &kp R                    &kp T                                            &kp Y        &kp U  &lt 5 I    &kp O       &lt 7 P        &kp DELETE
+&kp ESCAPE  &kp Q  &kp W      &kp E         &kp R                    &kp T                                            &kp Y        &kp U  &kp I      &kp O       &lt 7 P        &kp DELETE
 &kp TAB     &kp A  &kp S      &kp D         &kp F                    &kp G                                            &kp H        &kp J  &kp K      &kp L       &kp SEMICOLON  &mt RIGHT_WIN ENTER
 &kp LSHFT   &kp Z  &kp X      &kp C         &kp V                    &kp B                                            &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &lt 6 MINUS
                    &kp LCTRL  &kp LEFT_ALT  &mt LEFT_WIN LANGUAGE_2  &lt 1 SPACE  &lt 6 LANG1    &mt RCTRL BACKSPACE  &lt 2 ENTER         &kp PSCRN
@@ -77,8 +77,8 @@
         ARROW {
             bindings = <
 &tog 3  &to_layer_0 Q  &to_layer_0 W           &to_layer_0 E  &to_layer_0 R            &to_layer_0 T                    &to_layer_0 Y  &to_layer_0 U   &to_layer_0 I  &to_layer_0 O  &kp RG(RIGHT_ARROW)          &trans
-&trans  &trans         &kp LC(LEFT_ARROW)      &kp PAGE_UP    &kp LC(RIGHT_ARROW)      &kp HOME                         &kp LG(C)      &mkp MB1        &kp UP_ARROW   &mkp MB2       &mkp MB3                     &trans
-&trans  &trans         &kp LG(LA(LEFT_ARROW))  &kp PAGE_DOWN  &kp LG(LA(RIGHT_ARROW))  &kp END                          &kp LG(V)      &kp LEFT_ARROW  &kp DOWN       &kp RIGHT      &kp RA(RC(RG(RIGHT_ARROW)))  &trans
+&trans  &to_layer_0 A  &kp LC(LEFT_ARROW)      &kp PAGE_UP    &kp LC(RIGHT_ARROW)      &kp HOME                         &kp LG(C)      &mkp MB1        &kp UP_ARROW   &mkp MB2       &mkp MB3                     &trans
+&trans  &to_layer_0 Z  &kp LG(LA(LEFT_ARROW))  &kp PAGE_DOWN  &kp LG(LA(RIGHT_ARROW))  &kp END                          &kp LG(V)      &kp LEFT_ARROW  &kp DOWN       &kp RIGHT      &kp RA(RC(RG(RIGHT_ARROW)))  &trans
                        &trans                  &trans         &trans                   &trans         &trans    &trans  &trans                         &trans
             >;
 
@@ -105,10 +105,10 @@
 
         ARROW_WIN {
             bindings = <
-&tog 0  &trans  &trans            &trans         &trans               &trans                      &trans     &trans    &trans          &trans     &trans  &trans
-&trans  &trans  &kp LG(LC(LEFT))  &kp PAGE_UP    &kp LC(LG(RIGHT))    &kp HOME                    &kp LC(C)  &mkp MB1  &kp UP_ARROW    &mkp MB2   &trans  &trans
-&trans  &trans  &kp LG(LEFT)      &kp PAGE_DOWN  &kp LG(RIGHT_ARROW)  &kp END                     &kp LC(V)  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans
-                &trans            &trans         &trans               &trans    &trans    &trans  &trans               &trans
+&tog 0  &to_layer_3 Q  &to_layer_3 W     &to_layer_3 E  &to_layer_3 R        &to_layer_3 T                    &to_layer_3 H  &to_layer_3 U  &to_layer_3 I   &to_layer_3 O  &to_layer_3 P  &trans
+&trans  &to_layer_3 A  &kp LG(LC(LEFT))  &kp PAGE_UP    &kp LC(LG(RIGHT))    &kp HOME                         &kp LC(C)      &mkp MB1       &kp UP_ARROW    &mkp MB2       &trans         &trans
+&trans  &to_layer_3 Z  &kp LG(LEFT)      &kp PAGE_DOWN  &kp LG(RIGHT_ARROW)  &kp END                          &kp LC(V)      &kp LEFT       &kp DOWN_ARROW  &kp RIGHT      &trans         &trans
+                       &trans            &trans         &trans               &trans         &trans    &trans  &trans                        &trans
             >;
         };
 
